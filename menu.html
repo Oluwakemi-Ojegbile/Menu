@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Menu</title>
+	<link rel="stylesheet" href="Navigationmenu.css">
+	
+</head>
+<body>
+	<div id="main-body">
+
+   		<nav v-bind:class="message" v-on:click.prevent>
+
+       		 <a href="#" class="home" v-on:click="makeMessage('home')">Home</a>
+       		 <a href="#" class="projects" v-on:click="makeMessage('projects')">Projects</a>
+       		 <a href="#" class="services" v-on:click="makeMessage('services')">Services</a>
+       		 <a href="#" class="contact" v-on:click="makeMessage('contact')">Contact</a>
+    	</nav>
+   		
+	    	<p>You Clicked the <b>{{message}}</b> Page!</p>
+	</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+<script type="text/javascript" src="Navigationmenu.js"></script>
+</body>
+</html>
